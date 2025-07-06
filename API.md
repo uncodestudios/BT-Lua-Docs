@@ -1544,6 +1544,15 @@ function OnPause()
 end
 ```
 
+### OnUnloaded()
+Called when extensions are being unloaded to restart or on application shutdown
+```lua
+function OnUnloaded
+    -- Set any references nil and undo most boolean logic
+    Debug:Log("My extension unloaded!")
+end
+```
+
 ### OnFocus(), OnLostFocus()
 Called when application gains/loses focus.
 ```lua
@@ -1605,5 +1614,10 @@ end
 function OnGUI()
     EGUI:Label(10, 10, 200, 30, "Health: " .. health)
     EGUI:Label(10, 50, 300, 30, "WASD: Move, Space: Jump, I: Debug")
+end
+
+function OnUnloaded()
+    player = nil
+    Debug:Log("Player Controller Unloaded!")
 end
 ```
