@@ -1547,7 +1547,7 @@ end
 ### OnUnloaded()
 Called when extensions are being unloaded to restart or on application shutdown
 ```lua
-function OnUnloaded
+function OnUnloaded()
     -- Set any references nil and undo most boolean logic
     Debug:Log("My extension unloaded!")
 end
