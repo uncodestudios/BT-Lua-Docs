@@ -145,7 +145,6 @@ local forwardDir = EPhysics:GetTransformForward(player)
 Get the right direction vector of the object's transform.
 ```lua
 local rightDir = EPhysics:GetTransformRight(player)
--- rightDir is a Vector3 representing the red axis (right direction)
 ```
 
 #### EPhysics:GetTransformUp(obj)
