@@ -153,6 +153,24 @@ Get the up direction vector of the object's transform.
 local upDir = EPhysics:GetTransformUp(player)
 ```
 
+#### EPhysics:GetX(vector3)
+Get the X component of a Vector3.
+```lua
+local x = EPhysics:GetX(forwardDir)
+```
+
+#### EPhysics:GetY(vector3)
+Get the Y component of a Vector3.
+```lua
+local y = EPhysics:GetY(forwardDir)
+```
+
+#### EPhysics:GetZ(vector3)
+Get the Z component of a Vector3.
+```lua
+local z = EPhysics:GetZ(forwardDir)
+```
+
 #### Engine:SetEulerAngles(obj, x, y, z)
 Set rotation using Euler angles.
 ```lua
