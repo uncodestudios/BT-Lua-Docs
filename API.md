@@ -138,37 +138,37 @@ local x = Engine:GetPositionX(player)
 #### EPhysics:GetTransformForward(obj)
 Get the forward direction vector of the object's transform.
 ```lua
-local forwardDir = EPhysics:GetTransformForward(player)
+local forwardDir = Engine:GetTransformForward(player)
 ```
 
 #### EPhysics:GetTransformRight(obj)
 Get the right direction vector of the object's transform.
 ```lua
-local rightDir = EPhysics:GetTransformRight(player)
+local rightDir = Engine:GetTransformRight(player)
 ```
 
 #### EPhysics:GetTransformUp(obj)
 Get the up direction vector of the object's transform.
 ```lua
-local upDir = EPhysics:GetTransformUp(player)
+local upDir = Engine:GetTransformUp(player)
 ```
 
 #### EPhysics:GetX(vector3)
 Get the X component of a Vector3.
 ```lua
-local x = EPhysics:GetX(forwardDir)
+local x = Engine:GetX(forwardDir)
 ```
 
 #### EPhysics:GetY(vector3)
 Get the Y component of a Vector3.
 ```lua
-local y = EPhysics:GetY(forwardDir)
+local y = Engine:GetY(forwardDir)
 ```
 
 #### EPhysics:GetZ(vector3)
 Get the Z component of a Vector3.
 ```lua
-local z = EPhysics:GetZ(forwardDir)
+local z = Engine:GetZ(forwardDir)
 ```
 
 #### Engine:SetEulerAngles(obj, x, y, z)
