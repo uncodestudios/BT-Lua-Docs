@@ -135,6 +135,25 @@ Get position components.
 local x = Engine:GetPositionX(player)
 ```
 
+#### EPhysics:GetTransformForward(obj)
+Get the forward direction vector of the object's transform.
+```lua
+local forwardDir = EPhysics:GetTransformForward(player)
+```
+
+#### EPhysics:GetTransformRight(obj)
+Get the right direction vector of the object's transform.
+```lua
+local rightDir = EPhysics:GetTransformRight(player)
+-- rightDir is a Vector3 representing the red axis (right direction)
+```
+
+#### EPhysics:GetTransformUp(obj)
+Get the up direction vector of the object's transform.
+```lua
+local upDir = EPhysics:GetTransformUp(player)
+```
+
 #### Engine:SetEulerAngles(obj, x, y, z)
 Set rotation using Euler angles.
 ```lua
